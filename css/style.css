@@ -104,4 +104,15 @@ header {
   font-size: 18px;
   pointer-events: none;
 }
+
+.added-todo {
+  opacity: 1;
+  transition: opacity .25s ease;
+  -moz-transition: opacity .25s ease;
+  -webkit-transition: opacity .25s ease;
+}
+
+.reduce-opacity {
+  opacity: 0;
+}
 /*# sourceMappingURL=style.css.map */

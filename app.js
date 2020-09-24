@@ -4,13 +4,12 @@ const inputText = document.querySelector('.input-text');
 const addBtn = document.querySelector('.add-btn');
 const todoArea = document.querySelector('.todo-area');
 const alertText = document.querySelector('.alert-text');
-
-
-
+const todoList = document.querySelector('.todo-list');
 
 
 //event listeners
 addBtn.addEventListener('click', addTodo);
+todoList.addEventListener('click', completedTodo);
 
 
 //functions
@@ -18,11 +17,11 @@ addBtn.addEventListener('click', addTodo);
 function addTodo() {
 
     if (inputText.value === " "){
-        
         alertText.style.display = "block"
         setTimeout(function(){
             alertText.style.display = "none"  
         }, 1500);
+
     } else {
         const todoDiv = document.createElement('div');
         todoDiv.classList.add('added-todo')
@@ -39,30 +38,30 @@ function addTodo() {
     
         document.querySelector('.todo-list').appendChild(todoDiv);
         inputText.value = " ";
+  
     }
+};
 
+
+function completedTodo(e){
     
-        
+    const item = e.target;
+    if (item.classList.contains('completed-btn')){
+        const completedTodo = item.parentElement;
+        completedTodo.classList.add('reduce-opacity');
+        completedTodo.addEventListener('transitionend', function(){
+            completedTodo.remove();
+        })
+         
+    }
     
-                
-      
-    };
-
-    // let completedBtn = document.querySelector('.completed-btn');
-   
-    // completedBtn.addEventListener('click', function(e){
-        
-    //     const item = e.target;
-    //     const completedTodo = item.parentElement;
-    
-    //     completedTodo.remove(); 
-    // });
-
-    
-
-
-
+}
     
 
     
-      
+
+
+
+    
+
+    
