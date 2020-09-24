@@ -1,0 +1,104 @@
+*, *:before, *:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(245, 205, 28, 0.6);
+}
+
+.main-container {
+    width: 80%;
+    min-height: 35vh;
+    margin: 8vh auto;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2em;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(17, 44, 88);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.input-area {
+    height: auto;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: .5em;
+}
+.input-text {
+    width: 60%;
+    max-width: 450px;
+    height: 35px;
+    padding: .3rem .5rem;
+    font-size: 18px;
+    font-family: 'Domine', serif;
+    color: rgb(17, 44, 88);
+    
+    
+}
+
+.add-btn {
+    height: 35px;
+    width: 35px;
+    border: none;
+    background-color: rgb(40,103,215);
+    padding: .3em;
+    cursor: pointer;
+}
+
+.fa-plus-square {
+    font-size: 26px; 
+    color: rgb(199, 222, 250);
+    pointer-events: none;
+}
+
+.alert-text {
+    color: red;
+    display: none;
+}
+
+.todo-area {
+    margin: 2.5em auto;
+    width: 80%;
+    max-width: 500px;
+}
+
+.added-todo {
+    color: rgb(17, 44, 88);
+    border-bottom: solid 1px rgb(40,103,215);
+    padding: .3em .4em;
+    margin: .7em;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    
+}
+
+.completed-btn {
+    width: 2em;
+    height: 2em;
+    background-color: rgb(39, 221, 39);
+    color: rgb(17, 44, 88);
+    cursor: pointer;
+}
+
+.fa-check {
+    font-size: 18px;
+    pointer-events: none;
+}
+
+
+
+//#D79828
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Domine', serif;
+
+
