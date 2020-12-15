@@ -107,9 +107,9 @@ header {
 
 .added-todo {
   opacity: 1;
-  transition: opacity .25s ease;
-  -moz-transition: opacity .25s ease;
-  -webkit-transition: opacity .25s ease;
+  transition: opacity .5s ease;
+  -moz-transition: opacity .5s ease;
+  -webkit-transition: opacity .5s ease;
 }
 
 .reduce-opacity {

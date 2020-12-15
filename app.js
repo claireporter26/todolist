@@ -5,17 +5,20 @@ const addBtn = document.querySelector('.add-btn');
 const todoArea = document.querySelector('.todo-area');
 const alertText = document.querySelector('.alert-text');
 const todoList = document.querySelector('.todo-list');
+const inputArea = document.querySelector('.input-area');
 
 
 //event listeners
-addBtn.addEventListener('click', addTodo);
+// addBtn.addEventListener('click', addTodo);
+inputArea.addEventListener('submit', addTodo);
 todoList.addEventListener('click', completedTodo);
 
 
 //functions
 
-function addTodo() {
+function addTodo(e) {
 
+    e.preventDefault();
     if (inputText.value === " "){
         alertText.style.display = "block"
         setTimeout(function(){
